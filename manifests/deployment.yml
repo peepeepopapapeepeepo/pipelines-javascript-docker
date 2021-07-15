@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: peepeepopapapeepeepopipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: peepeepopapapeepeepopipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: peepeepopapapeepeepopipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: peepeepopapapeepeepopipelinesjavascriptdocker 
+          image: demo112233445566778899acr.azurecr.io/peepeepopapapeepeepopipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
